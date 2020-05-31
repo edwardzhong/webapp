@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <!-- 控制台 -->
+    <script src="https://cdn.h5.sinreweb.com/jd-diyhome/vconsole.min.js"></script>
+    <script>
+      new VConsole()
+    </script>
+    <!-- 京东SDK -->
+    <script src="https://cdn.h5.sinreweb.com/jd-3songshu-meishiditu/jssdk.min.js"></script>
+    <!-- 京东无限分享组件 -->
+    <script src="https://h5static.m.jd.com/act/jm-jdshare/1.6.1/jm-jdshare.js"></script>
+    <!-- 小程序H5适配jsapi -->
+    <script src="//wq.360buyimg.com/js/common/dest/wq.wxapi.ext.937fa71b5c.js"></script>
+    <!-- 百度统计代码 -->
+    <!-- <script>
+      var _hmt = _hmt || []
+      _hmt.push(['_setAutoPageview', false])
+      ;(function() {
+          var hm = document.createElement('script')
+          hm.src = 'https://hm.baidu.com/hm.js?5427e745753c0e8adce7b96d953249a1'
+          var s = document.getElementsByTagName('script')[0]
+          s.parentNode.insertBefore(hm, s)
+      })()
+    </script> -->
+    </script>
+    <!-- 京东pv统计 -->
+    <!-- <script type="text/javascript">
+      var jap = { siteId: 'JA2019_2132395', autoLogPv: false }
+    </script>
+    <script type="text/javascript" src="//wl.jd.com/unify.min.js"></script> -->
+    <!-- 腾讯统计 -->
+    <!-- <script>
+      var _mtac = {
+        senseHash: 0,
+        autoReport: 0,
+        performanceMonitor: 1,
+        senseQuery: 1
+      }
+    </script>
+    <script
+      src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+      name="MTAH5"
+      sid="500717446"
+      cid="500717447"
+    ></script> -->
+    <!-- QQ 微博 浏览器唤起京东APP -->
+    <script src="//wq.360buyimg.com/js/common/dest/wq.imk.downloadAppPlugin.min.js"></script>
+    <!-- 环境判断 -->
+    <script>       
+      // 是否在京东App内
+      function isJDApp() {
+        return window.JSSDK.Client.isJDApp()
+      }
+      // 是否在微信小程序内
+      function isMiniProgram() {
+        const ua = navigator.userAgent.toLowerCase()
+        return ua.includes('miniprogram')
+      } 
+      // 是否在微信内
+      function isWeixin() {
+        return window.JSSDK.Client.isWeixin()
+      }
+      // 是否在QQ内
+      function isQQ() {
+        return window.JSSDK.Client.isQQ()
+      }
+    </script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

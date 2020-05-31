@@ -1,0 +1,107 @@
+.van-loading {
+  position: absolute;
+  top: 40%;
+  left: 355px;
+}
+.van-popup {
+  background: transparent;
+}
+.btn {
+  margin: 0 50px;
+  width: 170px;
+  height: 70px;
+  line-height: 70px;
+  background: url('../assets/images/btn.png') no-repeat center / 100%;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.dialog {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 584px;
+  height: 690px;
+  padding: 120px 40px 40px;
+  background: url('../assets/images/dialog.png') no-repeat center / 100%;
+}
+.dialog-close {
+  margin: 60px auto 0;
+  width: 78px;
+  height: 78px;
+  background: url('../assets/images/close.png') no-repeat center / 100%;
+}
+.btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 40px;
+}
+.dialog-title {
+  margin: 0 auto;
+  width: 166px;
+  padding: 10px;
+  background: rgba(236, 58, 47, 1);
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  border: 6px solid #6c45ee;
+  border-radius: 16px;
+}
+.dialog-body {
+  margin-top: 20px;
+  padding: 0 30px;
+  height: 420px;
+  overflow-y: auto;
+  font-size: 20px;
+  text-align: justify;
+  color: rgba(70, 73, 150, 1);
+  .cart {
+    width: 160px;
+    height: 200px;
+    margin: 10px auto;
+    background: url('../assets/images/cart100.png') no-repeat center / 100%;
+  }
+  .bean{
+    width: 190px;
+    height: 190px;
+    margin: 10px auto;
+    background: url('../assets/images/bean.png') no-repeat center / 100%;
+  }
+  .cry {
+    width: 145px;
+    height: 132px;
+    margin: 10px auto;
+    background: url('../assets/images/cry.png') no-repeat center / 100%;
+  }
+  span {
+    color: #ec3a2f;
+  }
+  p{
+    font-size: 20px;
+  }
+  .txt {
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .succ-txt{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color:rgba(70,73,150,1);
+  }
+  .fail-txt {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(135, 76, 0, 1);
+  }
+  .btn {
+    width: 160px;
+    margin: 0 auto;
+  }
+}

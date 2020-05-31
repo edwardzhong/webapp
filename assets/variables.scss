@@ -1,0 +1,40 @@
+$fontColor: #333;
+$fontGray: #666;
+$bg: #323232;
+$blue: #3680ee;
+$bgBlue: hsl(215, 100%, 55%);
+$minWidth: 1200px;
+$mobileWidth: 768px;
+
+@mixin imgbg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+}
+
+@mixin nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin nowrapTwo {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+@mixin layout {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 90%;
+	min-width: 1000px;
+}
+
+@mixin sm {
+	@media screen and (max-width: $mobileWidth) {
+		@content;
+	}
+}
