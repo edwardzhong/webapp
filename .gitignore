@@ -89,3 +89,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+assets/images/*.png
+assets/images/*.jpg
