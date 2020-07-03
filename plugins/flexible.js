@@ -29,6 +29,9 @@
     if (e.persisted) {
       setRemUnit()
     }
+    // if (e.persisted || (window.performance && window.performance.navigation.type == 2)) {
+    //   location.reload()
+    // }
   })
   // detect 0.5px supports
   if (dpr >= 2) {
