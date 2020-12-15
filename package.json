@@ -2,7 +2,7 @@
   "name": "hello-nuxt",
   "version": "1.0.0",
   "description": "My Nuxt.js project",
-  "author": "13513373633",
+  "author": "Jeff zhong",
   "private": true,
   "scripts": {
     "dev": "nuxt",
